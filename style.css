@@ -4,7 +4,7 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: 'Heebo', sans-serif;
-  font-weight: 600;
+  
 }
 
 html,
@@ -24,13 +24,6 @@ body {
   width: 100%;
   background-color: black;
 }
-#page1 {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: #fff;
-}
-
 #page > nav {
   display: flex;
   align-items: center;
@@ -38,9 +31,32 @@ body {
   padding: 0px 20px;
   height: 7vh;
   width: 70vw;
-  background-color: #fff;
+  background-color: #000000;
   position: absolute;
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
 }
+#page>nav>h1{
+    font-size: 400;
+    color: #fff;
+}
+
+#page>video{
+    height: 100%;
+    width: 50%;
+}
+#page>nav>button{
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 100;
+    background-color: #fff;
+}
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+
