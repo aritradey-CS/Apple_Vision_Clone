@@ -45,6 +45,10 @@ body {
 #page>video{
     height: 100%;
     width: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #page>nav>button{
     padding: 6px 20px;
