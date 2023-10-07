@@ -39,3 +39,25 @@ function loco() {
 }
 
 loco();
+
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page>video",
+    start: "5% top",
+    end: "bottom top",
+    // markers: true,
+    scroller: "#main"
+  },
+  onStart: () => {
+    document.querySelector("#page>video").play();
+  }
+})
+.to("#page>video", {
+  opacity: 1, // You can add any desired animations here
+  duration: 1
+})
+.to("#page-bottom", {
+  opacity: 0, // Hide the image when scrolling
+  duration: 0.1
+}, 0); // The "0" means it happens at the same time as the video animation
