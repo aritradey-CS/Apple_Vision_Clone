@@ -36,6 +36,23 @@ function loco() {
 
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
+
+
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: "#page-bottom",
+      start: "30% top",
+      end: "bottom top",
+      scroller: "#main",
+    },
+  })
+  .to("#page-bottom", {
+    opacity: 0,
+    duration: 1, // Adjust the duration as needed for the desired fade effect
+  });
+
+
+
 }
 
 loco();
@@ -61,3 +78,25 @@ gsap.timeline({
   opacity: 0, // Hide the image when scrolling
   duration: 0.1
 }, 0); // The "0" means it happens at the same time as the video animation
+
+
+gsap.to("#page",{
+  scrollTrigger:{
+    trigger:`#page`,
+    start:`top top`,
+    end:`bottom top`,
+    scroller:`#main`,
+    pin:true
+  }
+})
+
+
+// gsap.to("#page-bottom",{
+//   scrollTrigger:{
+//     trigger:`#page-bottom`,
+//     start:`30% top`,
+//     end:`bottom top`,
+//     scroller:`#main`,
+//   },
+//   opacity:0
+// })
