@@ -3,8 +3,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'Heebo', sans-serif;
-  
+  font-family: "Heebo", sans-serif;
 }
 
 html,
@@ -37,43 +36,44 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#page>nav>h1{
-    font-size: 400;
-    color: #fff;
+#page > nav > h1 {
+  font-size: 400;
+  color: #fff;
 }
 
-#page>video{
-    height: 100%;
-    width: 50%;
-    object-fit: cover;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+#page > video {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#page>nav>button{
-    padding: 6px 20px;
-    border-radius: 50px;
-    border: none;
-    font-size: 100;
-    background-color: #fff;
+#page > nav > button {
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 100;
+  background-color: #fff;
+  cursor: pointer;
 }
-#page-bottom{
-    height: 20%;
-    width: 25%;
-    /* background-color: green; */
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#page-bottom {
+  height: 20%;
+  width: 25%;
+  /* background-color: green; */
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#page-bottom>h3{
+#page-bottom > h3 {
   font-weight: 400;
   color: #ffffff62;
-  margin-bottom:1vw ;
+  margin-bottom: 1vw;
 }
 
 #page1 {
@@ -83,14 +83,13 @@ body {
   background-color: #fff;
 }
 
-
-#page1>video{
+#page1 > video {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-#page1>h1{
+#page1 > h1 {
   font-size: 4vw;
   color: #fff;
   font-weight: 400;
@@ -101,20 +100,19 @@ body {
   white-space: nowrap;
 }
 
-#page2{
+#page2 {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
-#page2>video{
+#page2 > video {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-
-#page2>h1{
+#page2 > h1 {
   font-size: 4vw;
   color: #fff;
   font-weight: 400;
@@ -126,22 +124,21 @@ body {
   text-align: center;
 }
 
-
-#page3{
+#page3 {
   position: relative;
   height: 100vh;
   width: 100vw;
   background-color: #ffffff;
 }
 
-#page3>img {
+#page3 > img {
   width: 80%; /* You can adjust the percentage to make it smaller or larger */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#page3-upper{
+#page3-upper {
   height: 25%;
   width: 35%;
   position: absolute;
@@ -151,7 +148,7 @@ body {
   transform: translate(-50%);
 }
 
-#page3-upper>img{
+#page3-upper > img {
   position: absolute;
   width: 70%;
   top: 10%;
@@ -159,7 +156,7 @@ body {
   transform: translateX(-50%);
 }
 
-#page3-upper-inner{
+#page3-upper-inner {
   position: absolute;
   bottom: 0%;
   height: 60%;
@@ -168,15 +165,15 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px;
-  color:#ff5a00;
+  color: #ff5a00;
 }
 
-#page3-upper-inner>h3{
+#page3-upper-inner > h3 {
   font-weight: 600;
   font-size: medium;
 }
 
-#page3-upper-inner-down{
+#page3-upper-inner-down {
   position: absolute;
   /* top: 10%; */
   bottom: -15%;
@@ -186,15 +183,15 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 70px;
-  color:#86868b;
+  color: #86868b;
 }
 
-#page3-upper-inner-down>h3{
+#page3-upper-inner-down > h3 {
   font-weight: 600;
   font-size: medium;
 }
 
-#page3>button{
+#page3 > button {
   position: absolute;
   bottom: 7%;
   left: 50%;
@@ -205,27 +202,83 @@ body {
   background-color: #fff;
   border-radius: 50px;
   font-size: larger;
+  cursor: pointer;
 }
 
-#page4{
+#page4 {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
-#page4>video{
+#page4 > video {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-#center-page4{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-text-align: center;
-color: #fff;
-font-size: 2vw;
+#center-page4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2vw;
 }
 
+#page5 {
+  display: flex;
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  
+}
+
+.left5 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  
+}
+
+.left5 > h1 {
+  position: relative;
+  font-size: 2.5vw;
+  left: 80%;
+  transform: translateX(-50%);
+  top: 15%;
+}
+
+.right5 {
+  display: flex;
+  align-self: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  
+  padding-left: 5vw;
+}
+
+.right5 > h3 {
+  margin-left: -10%;
+  margin-top:7%;
+  font-size: 1.5vw;
+  width: 80%;
+  color: #00000075;
+}
+
+.right5 > button {
+  width: 50%;
+  padding: 10px 20px;
+  margin-left: -10%;
+  border: none;
+  background-color: #ff5a00;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50px;
+  font-size: larger;
+  margin-top: 1.5vw ;
+  cursor: pointer;
+}
