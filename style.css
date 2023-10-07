@@ -135,7 +135,7 @@ body {
 }
 
 #page3>img {
-  width: 60%; /* You can adjust the percentage to make it smaller or larger */
+  width: 80%; /* You can adjust the percentage to make it smaller or larger */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -192,4 +192,17 @@ body {
 #page3-upper-inner-down>h3{
   font-weight: 600;
   font-size: medium;
+}
+
+#page3>button{
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: 1px solid #000;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: larger;
 }
