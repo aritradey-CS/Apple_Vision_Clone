@@ -125,3 +125,29 @@ body {
   white-space: nowrap;
   text-align: center;
 }
+
+
+#page3{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+#page3>img {
+  width: 60%; /* You can adjust the percentage to make it smaller or larger */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#page3-upper{
+  height: 30%;
+  width: 35%;
+  background-color: green;
+  position: absolute;
+  z-index: 9;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+}
