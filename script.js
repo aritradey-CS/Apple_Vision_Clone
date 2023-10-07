@@ -37,59 +37,58 @@ function loco() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 
-
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: "#page-bottom",
-      start: "30% top",
-      end: "bottom top",
-      scroller: "#main",
-    },
-  })
-  .to("#page-bottom", {
-    opacity: 0,
-    duration: 1, // Adjust the duration as needed for the desired fade effect
-  });
-
-
-
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: "#page-bottom",
+        start: "5% top",
+        end: "bottom top",
+        scroller: "#main",
+      },
+    })
+    .to("#page-bottom", {
+      opacity: 0,
+      duration: 1, // Adjust the duration as needed for the desired fade effect
+    });
 }
 
 loco();
 
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#page>video",
+      start: "5% top",
+      end: "bottom top",
+      // markers: true,
+      scroller: "#main",
+    },
+    onStart: () => {
+      document.querySelector("#page>video").play();
+    },
+  })
+  .to("#page>video", {
+    opacity: 1, // You can add any desired animations here
+    duration: 1,
+  })
+  .to(
+    "#page-bottom",
+    {
+      opacity: 0, // Hide the image when scrolling
+      duration: 0.1,
+    },
+    0
+  ); // The "0" means it happens at the same time as the video animation
 
-gsap.timeline({
+gsap.to("#page", {
   scrollTrigger: {
-    trigger: "#page>video",
-    start: "5% top",
-    end: "bottom top",
-    // markers: true,
-    scroller: "#main"
+    trigger: `#page`,
+    start: `top top`,
+    end: `bottom top`,
+    scroller: `#main`,
+    pin: true,
   },
-  onStart: () => {
-    document.querySelector("#page>video").play();
-  }
-})
-.to("#page>video", {
-  opacity: 1, // You can add any desired animations here
-  duration: 1
-})
-.to("#page-bottom", {
-  opacity: 0, // Hide the image when scrolling
-  duration: 0.1
-}, 0); // The "0" means it happens at the same time as the video animation
-
-
-gsap.to("#page",{
-  scrollTrigger:{
-    trigger:`#page`,
-    start:`top top`,
-    end:`bottom top`,
-    scroller:`#main`,
-    pin:true
-  }
-})
-
+});
 
 // gsap.to("#page-bottom",{
 //   scrollTrigger:{
@@ -100,3 +99,19 @@ gsap.to("#page",{
 //   },
 //   opacity:0
 // })
+
+
+var tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:`#page1`,
+    start:`top top`,
+    scrub:1,
+    scroller:`#main`,
+    markers:true,
+    pin:true
+  },
+})
+
+tl.to("#page1>h1",{
+  top:`-50%`,
+})
