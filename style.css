@@ -293,5 +293,8 @@ body {
 }
 
 #page6>p{
+  font-size: 1.2vw;
+  width: 80%;
+  font-weight: 500 ;
 color: #86868b;
 }
