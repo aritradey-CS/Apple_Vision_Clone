@@ -11,6 +11,11 @@
 
   --middlepagebgcolor: #ffffff;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 html,
 body {
@@ -28,7 +33,7 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: black;
+  background-color: val(--canvas1bgcolor);
 }
 #page > nav {
   display: flex;
