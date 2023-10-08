@@ -145,9 +145,6 @@ tl2.to("#page4>#center-page4", {
   top: `-50%`,
 });
 
-
-
-
 function canvas() {
   const canvas = document.querySelector("#page7>canvas");
   const context = canvas.getContext("2d");
@@ -387,7 +384,7 @@ function canvas() {
       trigger: `#page7>canvas`,
       //   set start end according to preference
       start: `top top`,
-      end: `250% top`,
+      end: `600% top`,
       scroller: `#main`,
     },
     onUpdate: render,
@@ -403,7 +400,7 @@ function canvas() {
     var canvas = ctx.canvas;
     var hRatio = canvas.width / img.width;
     var vRatio = canvas.height / img.height;
-    var ratio = Math.max(hRatio, vRatio);
+    var ratio = Math.min(hRatio, vRatio);
     var centerShift_x = (canvas.width - img.width * ratio) / 2;
     var centerShift_y = (canvas.height - img.height * ratio) / 2;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -421,10 +418,10 @@ function canvas() {
   }
   // Scroll-triggered pinning
   ScrollTrigger.create({
-    trigger: "#page7",
+    trigger: "#page7>canvas",
     pin: true,
     start: "top top",
-    end: "200% top",
+    end: "600% top",
     scroller: "#main",
   });
 }
