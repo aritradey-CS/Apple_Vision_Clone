@@ -418,7 +418,7 @@ body {
   width: 20%;
   top: 40%;
   transform: translateY(-50%);
-  right: 5%;
+  left: 5%;
   font-size: 1.5vw;
   font-weight: 500;
   color: #86868b;
@@ -499,6 +499,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 #page16 > p {
@@ -509,10 +510,10 @@ body {
   top: 5%;
   font-size: 20px;
 }
-
-.highlight {
-  color: #000;
+.highlight-page16{
+color: #000;
 }
+
 
 #page16 > img {
   width: 80%;
