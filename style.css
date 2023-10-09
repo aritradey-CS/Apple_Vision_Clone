@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #000;
 }
 
 #main {
@@ -790,6 +791,7 @@ body {
   width: 100%;
   object-fit: cover;
   opacity: 0;
+  margin-top: 10%;
 }
 #page23 > #center-page23 {
   display: flex;
@@ -831,13 +833,12 @@ body {
   justify-content: center;
   flex-direction: column;
 
-
   width: 45%;
   padding: 10px 20px;
- 
+
   border: none;
-  background-color:#fff;
-  color:#000;
+  background-color: #fff;
+  color: #000;
   font-weight: 400;
   border-radius: 50px;
   font-size: larger;
