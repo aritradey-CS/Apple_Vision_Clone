@@ -486,3 +486,49 @@ background-size: cover;
   width: 100%;
   object-fit: cover;
 }
+
+#page16{
+  position: relative;
+  height: 180vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page16>p{
+  position: absolute;
+  width: 50%;
+  color: #86868b;
+  font-weight: 500;
+  top: 5%;
+  font-size: 20px;
+  
+}
+
+.highlight{
+  color: #000;
+}
+
+#page16>img{
+  width: 80%;
+  position: absolute;
+  bottom: 0%;
+}
+
+#page16>button{
+  position: absolute;
+  bottom: 10%;
+  width: 30%;
+  padding: 10px 20px;
+ 
+  border: none;
+  background-color: #ff5a00;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50px;
+  font-size: larger;
+  margin-top: 1.5vw;
+  cursor: pointer;
+}
