@@ -557,3 +557,19 @@ var tl3 = gsap.timeline({
 tl3.to("#page21>#troff", {
   opacity:0,
 });
+
+
+var tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `#page22`,
+    start: `top top`,
+    scrub: 1,
+    scroller: `#main`,
+    // markers:true,
+    pin: true,
+  },
+});
+
+tl4.to("#page22>#snroff", {
+  opacity:0,
+});
