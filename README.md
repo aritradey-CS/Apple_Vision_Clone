@@ -3,6 +3,8 @@
 **Description:**
 The Apple Vision Pro Website is a web project designed to showcase the innovative Apple Vision Pro product using modern web technologies. The website offers a captivating user experience with smooth scrolling animations and interactive elements, making it a great example of how to present cutting-edge technology to the world. Let's break down the key components of this project:
 
+![image](https://github.com/aritradey-CS/Apple_Vision_Clone/assets/81703791/d5d31326-c19d-4e47-9170-e7a43f35c0c3)
+
 1. **HTML Structure:**
    - The project uses clean and semantic HTML to structure the content of the website.
    - It incorporates responsive design principles by using the viewport meta tag to ensure proper rendering on various devices.
@@ -17,6 +19,8 @@ The Apple Vision Pro Website is a web project designed to showcase the innovativ
    - Locomotive Scroll is utilized to create smooth scrolling animations and enhance the user experience.
    - The website takes advantage of the ScrollTrigger plugin to trigger animations at specific scroll points, creating dynamic transitions and effects.
    - Videos on the site are set to play and control their visibility based on scrolling actions.
+     
+![image](https://github.com/aritradey-CS/Apple_Vision_Clone/assets/81703791/07baf228-c5a8-4f06-8d95-af68e2484890)
 
 4. **Content Presentation:**
    - The website presents the Apple Vision Pro product in a visually engaging way.
@@ -29,6 +33,9 @@ The Apple Vision Pro Website is a web project designed to showcase the innovativ
 6. **Canvas Animations:**
    - The project showcases impressive canvas animations that dynamically display a series of images as the user scrolls down the page.
    - These animations provide a visual representation of the product's features and design.
+     
+![image](https://github.com/aritradey-CS/Apple_Vision_Clone/assets/81703791/dd4b346e-77b0-4796-9cd4-e5b9981109a0)
+
 
 7. **GitHub Project:**
    - The code for this project is hosted on GitHub, making it accessible for collaboration and open source contributions.
